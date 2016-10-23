@@ -3,12 +3,14 @@ from larlib import *
 
 def buildStructure(beamSection, pillarSection, pillarDistances, beamDistances) :
 	"""
+
 	Create a simple parametric building structure in reinforced concrete
     :param beamSize: given dimensions of beam section
     :param pillarSize: given dimensions of pillar section
     :param beamDistances: distances between axes of the pillars
     :param pillarDistances: interstory heights
     :return: HPC object
+    
     """
 
 	(bx, bz) = beamSection
@@ -65,4 +67,4 @@ if __name__ == "__main__":
 
 	structure = buildStructure(beamSection, pillarSection, pillarDistances, beamDistances)
 
-VIEW(structure)
+	VIEW(structure)
