@@ -16,7 +16,7 @@ def createStructure(vertex, cells):
 	structure = OFFSET([0.2, 0.2, 0.2])(structure)
 	return structure
 
-def createFaces(cvertex, cells):
+def createFaces(vertex, cells):
 	"""
 	creates faces of the roof
 	Args:
@@ -27,7 +27,7 @@ def createFaces(cvertex, cells):
 	3D value of type HPC representing the faces of the roof
 	"""
 	faces = MKPOL([vertex, cells, None])
-	faces = OFFSET([0.3, 0.3, 0.3])(faces)
+	faces = OFFSET([1.0, 1.0, 1.0])(faces)
 	faces = COLOR(BROWN)(faces)
 	return faces
 
